@@ -81,13 +81,6 @@ pub fn generate_pin(length: usize) -> String {
         .map(|_| rng.gen_range(b'0'..=b'9') as char)
         .collect()
 }
-/// let pin = generate_pin(6);
-/// assert_eq!(pin.len(), 6);
-/// assert!(pin.chars().all(|c| c.is_ascii_digit()));
-/// ```
-pub fn generate_pin(_length: usize) -> String {
-    todo!("Implement generate_pin — hint: sample from '0'..='9'")
-}
 
 // A small word list for passphrases.
 pub const WORD_LIST: &[&str] = &[
